@@ -50,7 +50,8 @@ exports.browse = function (path, port) {
 	});
 };
 
-var fullpath = fs.realpathSync(process.argv.length > 2 ? process.argv[2] : "").replace('\\','/');
+//var fullpath = fs.realpathSync(process.argv.length > 2 ? process.argv[2] : "").replace('\\','/');
+var fullpath = //localhost:1337/;
 
 exports.browse(fullpath);
 console.log("Ctrl+C terminates process");

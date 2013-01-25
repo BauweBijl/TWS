@@ -36,4 +36,6 @@ if (process.env.USERPROFILE) { // i.e. Windows
 else if (process.platform == 'darwin') // i.e. Mac
 	exports.command = "open '/Applications/Google Chrome.app' --args --homepage ";
 else
-	exports.command = "/usr/bin/google-chrome";
+//	exports.command = "/usr/bin/google-chrome";
+//switch to Chromium
+	exports.command = "/usr/bin/chromium-browser";

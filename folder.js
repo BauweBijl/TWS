@@ -23,12 +23,12 @@ exports.folder = {
 						  fullpath, '</h3>\n'].join('') );
 				for (var i = 0; i < dl.length; i++)
 				{
-					rq.res.write(['<a href="/', encodeURIComponent(rq.fn), '/',
+					rq.res.write(['<a target="_blank" href="/', encodeURIComponent(rq.fn), '/',
 							   encodeURIComponent(dl[i]), '">', dl[i], '</a>'
 							  ].join(''));
 					rq.res.write('<br/>\n');
 				}
-				rq.res.write(["<form method='get' action='", rq.req.url, "'>",
+				rq.res.write(["<form method='get' target='_blank' action='", rq.req.url, "'>",
 						   "<input id='filename' name='filename' style='display:none'>",
 						   "<a id='newBtn' style='font-family: arial' href='javascript:;' onclick='",
 							   "var idfn = document.getElementById(\"filename\"); idfn.style.display=\"block\"; idfn.focus(); document.getElementById(\"newBtn\").style.display=\"none\"'>",

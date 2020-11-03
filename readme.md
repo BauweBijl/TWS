@@ -19,3 +19,6 @@ to browse a specified folder or file.
 *	The backstage actions that integrate with web resources (upgrade, import) are not implemented.
 *	The path used for launching Chrome on Windows XP is specific to the english version; on, say, danish Windows, "Local Settings" would be "Lokale Indstillinger". My solution for now is to allow you to tell TWS where the 'Google' folder is by setting the environment variable 'GooglePath' to, say 'C:\Documents and Settings\Poul\Lokale indstillinger\Application Data\'.
 
+# Issues with latest nodejs versions
+
+*	A new node version could stop supporting this app (node v8.10.0 confirmed working properly) use nvm to switch between node versions.
